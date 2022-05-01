@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Newsletter para el sorteo de la marca rappi de la materia Diseño y Desarrollo Web en UADE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mailing Rappi | Sorteo</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/business/company-icon.png">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+
+    :root {
+        --main-font-color: #FF2A01;
+        --secondary-font-color: #FFFFFF;
+        --main-gradient: linear-gradient(to bottom, #ff502d, #ff512f, #ff5331, #ff5432, #ff5534, #ff5331, #ff502f, #ff4e2c, #ff4624, #ff3e1a, #ff350f, #ff2a00);
+    }
+
+    body{
+        background-color: #E5E5E5;
+    }
+
+    .newsletter{
+          width: 50%;
+          margin: 0 auto;  
+          font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .newsletter .header {
+        background-image: var(--main-gradient);
+    }
+
+    .newsletter .header .place-img {
+        width: 100%;
+        height: 50vh;   
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        border: .5%;
+        border-bottom: 0;
+        transform: rotate(180deg);
+
+        background-image: url('./assets/images/places/barcelona-image.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .newsletter .header .info {
+        text-align: center;
+    }
+
+    .newsletter .header .info .info-text {
+        margin: 5% auto 0 auto;
+        width: 50%;
+        color: var(--secondary-font-color);
+        font-size: 1.2rem;
+    }
+
+    .newsletter .header .info .exclamation {
+        margin: 2% auto 2% auto;
+        color: var(--secondary-font-color);
+        font-size: 1.4rem;
+    }
+
+    .newsletter .header .info button {
+        border-radius: 28px;
+        font-size: 1.4rem;
+        color: var(--main-font-color);
+        font-weight: bold;
+        background: #FFFFFF;
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 2%;
+        border: 0;
+    }
+
+    .newsletter .header .info button:hover {
+        background: #f0f0f0;
+        cursor: pointer;
+    }
+
+    .newsletter .content {
+        background-color: #FFFFFF;
+    }
+
+    .newsletter .content .info-rewards {
+        padding-top: 1%;
+        text-align: center;
+        color: var(--main-font-color);
+        font-weight: bold;
+    }
+
+    .newsletter .content .info-rewards .announcement {
+        font-size: 1.3rem;
+    }
+
+    .newsletter .content .info-rewards .type-rewards{
+        width: 100%;
+        height: 100%;
+    }
+
+    .newsletter .content .type-rewards .type-rewards-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 -5px;
+    }
+
+    .newsletter .content .type-rewards .type-rewards-row .type-rewards-card{
+        background-image: var(--main-gradient);
+        border-radius: 27px;
+        width: 25%;
+        margin: 2%;
+        padding: 0 10px;
+    }
+
+    .newsletter .content .type-rewards .type-rewards-row .type-rewards-card .card-source{
+        max-width: 100%;
+    }
+
+    .newsletter .content .type-rewards .type-rewards-row .type-rewards-card .card-title{
+        color: var(--secondary-font-color);
+        font-size: 2rem;
+        overflow: hidden;
+    }
+
+    .newsletter .content .steps {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .newsletter .content .step-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 5%;
+        height: 18vh;
+        max-width: 100%;
+    }
+
+    .newsletter .content .reverse {
+        justify-content: flex-end;
+    }
+
+    .newsletter .content .step-row .circle-step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        width: 20%;
+        height: 100%;
+        background-image: var(--main-gradient);
+    }
+
+    .newsletter .content .step-row .circle-step .hand-image-step{
+        max-width: 70%;
+    }
+
+    .newsletter .content .step-row .step-info {
+        margin: 5%; 
+    }
+
+    .newsletter .content .step-row .step-info .step-info-text {
+        color: var(--main-font-color);
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        font-size: 3rem;
+        font-weight: bolder;
+        padding: 15px;
+    }
+
+    .newsletter .footer {
+        display: grid;
+        justify-content: center;
+        background-color: #FFFFFF;
+    }
+
+    .newsletter .footer .footer-row{
+        max-width: 100%;
+    }
+
+    @media (max-width: 991px) {
+        .newsletter .content .step-row .step-info .step-info-text{
+            font-size: 1rem;
+        }
+        
+        .newsletter .content .step-row .circle-step {
+            width: 40%;
+            height: 60%;
+        }
+
+        .newsletter .content .step-row .circle-step .hand-image-step {
+            max-width: 40%;
+        }
+
+        .newsletter .content .type-rewards .type-rewards-row .type-rewards-card{
+            width: 20%;
+        }
+
+        .newsletter .content .type-rewards .type-rewards-row .type-rewards-card .card-title {
+            font-size: .7rem;
+        }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="newsletter">
+    <div class="header">
+         <div class="place-img"></div>
+         <div class="info">
+             <p class="info-text">
+               ¿Queres ganarte un viaje a tu destino ideal?<br/>
+               Por realizar diferentes compras dentro de la aplicacion
+               ya estas participando.
+             </p>
+             <h5 class="exclamation">¡Excelente!</h5>
+             <a href="https://www.rappi.com.ar/" target="_blank"><button>¡Quiero ir!</button></a>
+         </div>
+    </div>
+    <div class="content">
+      <div class="rewards">      
+        <div class="info-rewards">
+            <p class="announcement">
+               Participa y podrás ganar diferentes premios
+            </p>
+            <div class="type-rewards">
+              <div class="type-rewards-row">
+                <div class="type-rewards-card">
+                    <img class="card-source" src="./assets/svg/rewards/plane.svg" alt="viajes">
+                    <h2 class="card-title">VIAJES</h2>
+                </div>
+                <div class="type-rewards-card">
+                    <img class="card-source" src="./assets/svg/rewards/gift.svg" alt="regalos">
+                    <h2 class="card-title">REGALOS</h2>
+                </div>
+                <div class="type-rewards-card">
+                    <img class="card-source" src="./assets/svg/rewards/discount.svg" alt="descuentos">
+                    <h2 class="card-title">DESCUENTOS</h2>
+                </div>
+              </div>            
+            </div>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step-row">
+          <div class="circle-step">
+            <img class="hand-image-step" src="./assets/svg/stepts/first-step-hand.svg" alt="primer paso">
+          </div>
+          <div class="step-info">
+            <h2 class="step-info-text">¡Registrate en Rappi!</h2>
+          </div>
+        </div>
+        <div class="step-row reverse">
+          <div class="step-info">
+            <h2 class="step-info-text">¡Hace un pedido!</h2>
+          </div>
+          <div class="circle-step">
+            <img class="hand-image-step" src="./assets/svg/stepts/second-step-hand.svg" alt="segundo paso">
+          </div>          
+        </div>
+        <div class="step-row">
+          <div class="circle-step">
+            <img class="hand-image-step" src="./assets/svg/stepts/third-step-hand.svg" alt="tercer paso">
+          </div>
+          <div class="step-info">
+            <h2 class="step-info-text">¡Participá!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-row">
+        <img src="./assets/svg/business/company-logo.svg" alt="rappi logo">
+      </div>
+      <div class="footer-row">
+        <a href="https://twitter.com/rappiargentina?lang=es">
+          <img class="social-media-item" src="./assets/svg/social-media/twitter.svg" alt="twiiter">
+        </a>
+        <a href="https://www.facebook.com/RappiArgentina/">
+          <img class="social-media-item" src="./assets/svg/social-media/facebook.svg" alt="facebook">
+        </a>
+        <a href="https://www.linkedin.com/company/rappi/">
+          <img class="social-media-item" src="./assets/svg/social-media/linkedin.svg" alt="linkedin">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
