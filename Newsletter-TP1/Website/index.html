@@ -12,7 +12,10 @@
   <link rel="icon" type="image/x-icon" href="./assets/images/business/company-icon.png">
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+  
+    /* COMMON STYLES */
+
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;800&display=swap');
 
     :root {
       --main-font-color: #FF2A01;
@@ -22,13 +25,16 @@
 
     body {
       background-color: #E5E5E5;
+      margin: 0;
     }
 
     .newsletter {
-      width: 50%;
       margin: 0 auto;
       font-family: 'Libre Franklin', sans-serif;
+      font-weight: 500;
     }
+
+    /* ---- HEADER SECTION ---- */
 
     .newsletter .header {
       background-image: var(--main-gradient);
@@ -39,7 +45,6 @@
       height: 50vh;
       border-top-left-radius: 100%;
       border-top-right-radius: 100%;
-      border: .5%;
       border-bottom: 0;
       transform: rotate(180deg);
 
@@ -53,14 +58,13 @@
     }
 
     .newsletter .header .info .info-text {
-      margin: 5% auto 0 auto;
-      width: 50%;
+      margin: 20px 10px;
       color: var(--secondary-font-color);
       font-size: 1.2rem;
     }
 
     .newsletter .header .info .exclamation {
-      margin: 2% auto 2% auto;
+      margin: 15px 0;
       color: var(--secondary-font-color);
       font-size: 1.4rem;
     }
@@ -72,7 +76,7 @@
       font-weight: bold;
       background: #FFFFFF;
       padding: 10px 20px 10px 20px;
-      margin-bottom: 2%;
+      margin-bottom: 20px;
       border: 0;
     }
 
@@ -81,12 +85,21 @@
       cursor: pointer;
     }
 
+    /* ---- CONTENT SECTION ---- */
+
+    /* REWARDS */
+
     .newsletter .content {
       background-color: #FFFFFF;
+      padding: 0 16px;
+    }
+
+    .newsletter .content .rewards,
+    .footer {
+      padding-top: 30px;
     }
 
     .newsletter .content .info-rewards {
-      padding-top: 1%;
       text-align: center;
       color: var(--main-font-color);
       font-weight: bold;
@@ -94,6 +107,8 @@
 
     .newsletter .content .info-rewards .announcement {
       font-size: 1.3rem;
+      margin: 0;
+      padding: 0 0 30px;
     }
 
     .newsletter .content .info-rewards .type-rewards {
@@ -104,16 +119,15 @@
     .newsletter .content .type-rewards .type-rewards-row {
       display: flex;
       align-items: center;
-      justify-content: center;
-      margin: 0 -5px;
+      justify-content: space-between;
     }
 
     .newsletter .content .type-rewards .type-rewards-row .type-rewards-card {
       background-image: var(--main-gradient);
       border-radius: 27px;
-      width: 25%;
-      margin: 2%;
-      padding: 0 10px;
+      width: 26%;
+      padding: 0 13px;
+      max-width: 152px;
     }
 
     .newsletter .content .type-rewards .type-rewards-row .type-rewards-card .card-source {
@@ -122,21 +136,24 @@
 
     .newsletter .content .type-rewards .type-rewards-row .type-rewards-card .card-title {
       color: var(--secondary-font-color);
-      font-size: 2rem;
+      font-size: 18px;
       overflow: hidden;
     }
+
+    /* STEPS */
 
     .newsletter .content .steps {
       display: inline-block;
       width: 100%;
       height: 100%;
+      margin-top: 40px;
     }
 
     .newsletter .content .step-row {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin: 5%;
+      margin: 5% 0;
       height: 18vh;
       max-width: 100%;
     }
@@ -145,18 +162,36 @@
       justify-content: flex-end;
     }
 
-    .newsletter .content .step-row .circle-step {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      width: 20%;
-      height: 100%;
-      background-image: var(--main-gradient);
+    .newsletter .content .circle-step {
+      position: relative;
     }
 
     .newsletter .content .step-row .circle-step .hand-image-step {
-      max-width: 70%;
+      width: 130px;
+      height: 130px;
+      padding: 8px;
+      background-image: var(--main-gradient);
+      border-radius: 100%;
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: var(--main-gradient);
+      color: white;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .reverse .step-number {
+      left: 0;
     }
 
     .newsletter .content .step-row .step-info {
@@ -166,66 +201,59 @@
     .newsletter .content .step-row .step-info .step-info-text {
       color: var(--main-font-color);
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      font-size: 3rem;
-      font-weight: bolder;
+      font-weight: 800;
       padding: 15px;
     }
 
-    .newsletter .footer {
-      display: grid;
-      justify-content: center;
-      background-color: #FFFFFF;
+    /* ---- FOOTER SECTION ---- */
+
+    .footer {
+      text-align: center;
+      display: block;
+      background: #FFFFFF;
+      margin: 0 auto;
     }
 
-    .newsletter .footer .footer-row {
-      max-width: 100%;
+    .footer .app-logo {
+      width: 75px;
     }
 
-    @media (max-width: 991px) {
-      .newsletter .content .step-row .step-info .step-info-text {
-        font-size: 1rem;
-      }
+    .footer a {
+      text-decoration: none;
+    }
 
-      .newsletter .content .step-row .circle-step {
-        width: 40%;
-        height: 60%;
-      }
+    .footer .social-media-item {
+      width: 30px;
+    }
 
-      .newsletter .content .step-row .circle-step .hand-image-step {
-        max-width: 40%;
+    @media (min-width: 500px) {
+      .newsletter,
+      .footer {
+        max-width: 525px;
       }
-
-      .newsletter .content .type-rewards .type-rewards-row .type-rewards-card {
-        width: 20%;
-      }
-
-      .newsletter .content .type-rewards .type-rewards-row .type-rewards-card .card-title {
-        font-size: .7rem;
-      }
-
     }
   </style>
 </head>
 
 <body>
-  <div class="newsletter">
-    <div class="header">
-      <div class="place-img"></div>
+  <main class="newsletter">
+    <section class="header">
+      <img src="./assets/images/places/barcelona-image.jpg" alt="Ciudad turística" class="place-img">
       <div class="info">
         <p class="info-text">
-          ¿Queres ganarte un viaje a tu destino ideal?<br />
-          Por realizar diferentes compras dentro de la aplicacion
-          ya estas participando.
+          ¿Querés ganarte un viaje a tu destino ideal?<br />
+          Por realizar diferentes compras dentro de la aplicación
+          ya estás participando.
         </p>
         <h5 class="exclamation">¡Excelente!</h5>
-        <a href="https://www.rappi.com.ar/" target="_blank"><button>¡Quiero ir!</button></a>
+        <a href="https://www.rappi.com.ar/" target="_blank"><button type="button">¡Quiero ir!</button></a>
       </div>
-    </div>
-    <div class="content">
+    </section>
+    <section class="content">
       <div class="rewards">
         <div class="info-rewards">
           <p class="announcement">
-            Participa y podrás ganar diferentes premios
+            Participá y podrás ganar diferentes premios
           </p>
           <div class="type-rewards">
             <div class="type-rewards-row">
@@ -249,6 +277,7 @@
         <div class="step-row">
           <div class="circle-step">
             <img class="hand-image-step" src="./assets/svg/stepts/first-step-hand.svg" alt="primer paso">
+            <div class="step-number">1</div>
           </div>
           <div class="step-info">
             <h2 class="step-info-text">¡Registrate en Rappi!</h2>
@@ -260,35 +289,38 @@
           </div>
           <div class="circle-step">
             <img class="hand-image-step" src="./assets/svg/stepts/second-step-hand.svg" alt="segundo paso">
+            <div class="step-number">2</div>
           </div>
         </div>
         <div class="step-row">
           <div class="circle-step">
             <img class="hand-image-step" src="./assets/svg/stepts/third-step-hand.svg" alt="tercer paso">
+            <div class="step-number">3</div>
           </div>
           <div class="step-info">
             <h2 class="step-info-text">¡Participá!</h2>
           </div>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <img src="./assets/svg/business/company-logo.svg" class="app-logo" alt="rappi logo">
     </div>
-    <div class="footer">
-      <div class="footer-row">
-        <img src="./assets/svg/business/company-logo.svg" alt="rappi logo">
-      </div>
-      <div class="footer-row">
-        <a href="https://twitter.com/rappiargentina?lang=es">
-          <img class="social-media-item" src="./assets/svg/social-media/twitter.svg" alt="twiiter">
-        </a>
-        <a href="https://www.facebook.com/RappiArgentina/">
-          <img class="social-media-item" src="./assets/svg/social-media/facebook.svg" alt="facebook">
-        </a>
-        <a href="https://www.linkedin.com/company/rappi/">
-          <img class="social-media-item" src="./assets/svg/social-media/linkedin.svg" alt="linkedin">
-        </a>
-      </div>
+    <div class="footer-row">
+      <a href="https://twitter.com/rappiargentina?lang=es">
+        <img class="social-media-item" src="./assets/svg/social-media/twitter.svg" alt="twiiter">
+      </a>
+      <a href="https://www.facebook.com/RappiArgentina/">
+        <img class="social-media-item" src="./assets/svg/social-media/facebook.svg" alt="facebook">
+      </a>
+      <a href="https://www.linkedin.com/company/rappi/">
+        <img class="social-media-item" src="./assets/svg/social-media/linkedin.svg" alt="linkedin">
+      </a>
     </div>
-  </div>
+  </footer>
 </body>
 
 </html>
