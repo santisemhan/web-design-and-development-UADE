@@ -85,6 +85,17 @@
       cursor: pointer;
     }
 
+    .newsletter .header .logo-container {
+      display: flex; justify-content: center;
+    }
+
+    .newsletter .header .logo-container .logo-img {
+      position: absolute;
+      z-index:1;
+      top: 20px;
+      width: 165px;
+    }
+    
     /* ---- CONTENT SECTION ---- */
 
     /* REWARDS */
@@ -238,6 +249,9 @@
 <body>
   <main class="newsletter">
     <section class="header">
+      <div class="logo-container">
+        <img src="./assets/svg/business/logo.svg" alt="Logo Rappi" class="logo-img">
+      </div>
       <img src="./assets/images/places/barcelona-image.jpg" alt="Ciudad turística" class="place-img">
       <div class="info">
         <p class="info-text">
