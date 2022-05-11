@@ -36,11 +36,11 @@
 
     /* ---- HEADER SECTION ---- */
 
-    .newsletter .header {
+    .newsletter header {
       background-image: var(--main-gradient);
     }
 
-    .newsletter .header .place-img {
+    .newsletter header .place-img {
       width: 100%;
       height: 50vh;
       border-top-left-radius: 100%;
@@ -53,23 +53,23 @@
       background-size: 100% 100%;
     }
 
-    .newsletter .header .info {
+    .newsletter header .info {
       text-align: center;
     }
 
-    .newsletter .header .info .info-text {
+    .newsletter header .info .info-text {
       margin: 20px 10px;
       color: var(--secondary-font-color);
       font-size: 1.2rem;
     }
 
-    .newsletter .header .info .exclamation {
+    .newsletter header .info .exclamation {
       margin: 15px 0;
       color: var(--secondary-font-color);
       font-size: 1.4rem;
     }
 
-    .newsletter .header .info button {
+    .newsletter header .info button {
       border-radius: 28px;
       font-size: 1.4rem;
       color: var(--main-font-color);
@@ -80,16 +80,16 @@
       border: 0;
     }
 
-    .newsletter .header .info button:hover {
+    .newsletter header .info button:hover {
       background: #f0f0f0;
       cursor: pointer;
     }
 
-    .newsletter .header .logo-container {
+    .newsletter header .logo-container {
       display: flex; justify-content: center;
     }
 
-    .newsletter .header .logo-container .logo-img {
+    .newsletter header .logo-container .logo-img {
       position: absolute;
       z-index:1;
       top: 20px;
@@ -106,7 +106,7 @@
     }
 
     .newsletter .content .rewards,
-    .footer {
+    footer {
       padding-top: 30px;
     }
 
@@ -207,6 +207,7 @@
 
     .newsletter .content .step-row .step-info {
       margin: 5%;
+      min-width: 35%;
     }
 
     .newsletter .content .step-row .step-info .step-info-text {
@@ -214,33 +215,34 @@
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       font-weight: 800;
       padding: 15px;
+      text-align: center;
     }
 
     /* ---- FOOTER SECTION ---- */
 
-    .footer {
+    footer {
       text-align: center;
       display: block;
       background: #FFFFFF;
       margin: 0 auto;
     }
 
-    .footer .app-logo {
+    footer .app-logo {
       width: 75px;
     }
 
-    .footer a {
+    footer a {
       text-decoration: none;
     }
 
-    .footer .social-media-item {
+    footer .social-media-item {
       width: 30px;
     }
 
     @media (min-width: 500px) {
       .newsletter,
-      .footer {
-        max-width: 525px;
+      footer {
+        max-width: 800px;
       }
     }
   </style>
@@ -248,7 +250,7 @@
 
 <body>
   <main class="newsletter">
-    <section class="header">
+    <header>
       <div class="logo-container">
         <img src="./assets/svg/business/logo.svg" alt="Logo Rappi" class="logo-img">
       </div>
@@ -262,9 +264,9 @@
         <h5 class="exclamation">¡Excelente!</h5>
         <a href="https://www.rappi.com.ar/" target="_blank"><button type="button">¡Quiero ir!</button></a>
       </div>
-    </section>
+    </header>
     <section class="content">
-      <div class="rewards">
+      <section class="rewards">
         <div class="info-rewards">
           <p class="announcement">
             Participá y podrás ganar diferentes premios
@@ -286,8 +288,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="steps">
+      </section>
+      <section class="steps">
         <div class="step-row">
           <div class="circle-step">
             <img class="hand-image-step" src="./assets/svg/stepts/first-step-hand.svg" alt="primer paso">
@@ -315,11 +317,11 @@
             <h2 class="step-info-text">¡Participá!</h2>
           </div>
         </div>
-      </div>
+      </section>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer>
     <div class="footer-row">
       <img src="./assets/svg/business/company-logo.svg" class="app-logo" alt="rappi logo">
     </div>
