@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
-
+    <link rel="stylesheet" href="./styles/carrousel.css">
     <title>Ganá con Rappi</title>
 </head>
 <body>
@@ -24,11 +24,11 @@
             <div
               class="toggle"
             ></div>
-            <ul class="navigation">
+            <ul class="navigation" style="float:right">
               <li><a href="#">Inicio</a></li> 
-              <li><a href="#">Premios</a></li>
-              <li><a href="#">Locales cercanos</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="#carrousel_premios">Premios</a></li>
+              <li><a href="#global_section">Locales cercanos</a></li>
+              <li><a href="#faq_section">FAQ</a></li>
             </ul>
         </header>
         <div class="content">
@@ -50,7 +50,18 @@
         </div>        
       </section>
       <section id="carrousel_section">
-        <img style="width: 50%; padding: 3%;" src="./assets/images/mock.png" alt="mock">
+        <div class="carousel">
+          <div class="slides">
+            <img src="./assets/images/mock.png" alt="slide image" class="slide">
+            <img src="./assets/images/mock.png" alt="slide image" class="slide">
+            <img src="./assets/images/mock.png" alt="slide image" class="slide">
+          </div>
+          <div class="controls">
+            <div class="control prev-slide">&#9668;</div>
+            <div class="control next-slide">&#9658;</div>
+          </div>
+        </div>
+        </div>
       </section>
       <section id="carrousel_premios">
         <h2 class="cards-title">¡Ganá diferentes premios!</h2>
@@ -74,14 +85,17 @@
         <div class="steps">
           <div>
             <img src="./assets/illustrations/third-step.png" alt="Logo primer paso" class="step">
+            <h2>Registrate</h2>
           </div>
           <hr class="linea-horizontal">
           <div>
             <img class="step" src="./assets/illustrations/second-step.png" alt="Logo segundo paso">
+            <h2>Haz un pedido</h2>
           </div>
           <hr class="linea-horizontal">
           <div>
             <img class="step" src="./assets/illustrations/first-step.png" alt="Logo tercer paso">
+            <h2>Participa</h2>
           </div>
         </div>
       </section>
@@ -91,32 +105,40 @@
           en todos los paises <br/> 
           de <strong>Latinoamerica</strong></p>
       </section>
-
+      <h2 class="text-header-color" >¡Viaja igual con <b>Rappi Travel!</b></h2>
       <section id="travel_section">
-          <div class="boxes-country" style="background-image: url('./assets/images/viajes.png');" title="Foto de españa">
-            <div class="text">        
-              <p>$67.500</p>
-              <p style="margin-bottom: 50px;">Madrid, España</p>
+          <a href="https://travel.rappi.com.ar/" target="_blank" style="text-decoration: none; ">
+            <div class="boxes-country" style="background-image: url('./assets/images/viajes.png');" title="Foto de españa">
+              <div class="text">        
+                <p>$67.500</p>
+                <p style="margin-bottom: 50px;">Madrid, España</p>
+              </div>
             </div>
-          </div>
-          <div class="boxes-country"  style="background-image: url('./assets/images/italia.jpg');" title="Foto de Italia">
-            <div class="text">        
-              <p>$87.999</p>
-              <p style="margin-bottom: 50px;">Cinque Terra, Italia</p>
+          </a>
+          <a href="https://travel.rappi.com.ar/" target="_blank" style="text-decoration: none; ">
+            <div class="boxes-country"  style="background-image: url('./assets/images/italia.jpg');" title="Foto de Italia">
+              <div class="text">        
+                <p>$87.999</p>
+                <p style="margin-bottom: 50px;">Cinque Terra, Italia</p>
+              </div>
             </div>
-          </div>
-          <div class="boxes-country" style="background-image: url('./assets/images/machu-pichu.jpg');" title="Foto de Perú">
-            <div class="text">        
-              <p>$30.000</p>
-              <p style="margin-bottom: 50px;">Machu picchu, Perú</p>
+          </a>
+          <a href="https://travel.rappi.com.ar/" target="_blank" style="text-decoration: none; ">
+            <div class="boxes-country" style="background-image: url('./assets/images/machu-pichu.jpg');" title="Foto de Perú">
+              <div class="text">        
+                <p>$30.000</p>
+                <p style="margin-bottom: 50px;">Machu picchu, Perú</p>
+              </div>
             </div>
-          </div>
-          <div class="boxes-country" style="background-image: url('./assets/images/bariloche.jpeg');" title="Foto de Bariloche">
-            <div class="text">        
-              <p>$67.500</p>
-              <p style="margin-bottom: 50px;">Bariloche, Argentina</p>
+          </a>
+          <a href="https://travel.rappi.com.ar/" target="_blank" style="text-decoration: none; ">
+            <div class="boxes-country" style="background-image: url('./assets/images/bariloche.jpeg');" title="Foto de Bariloche">
+              <div class="text">        
+                <p>$67.500</p>
+                <p style="margin-bottom: 50px;">Bariloche, Argentina</p>
+              </div>
             </div>
-          </div>
+          </a>
       </section>
       <section id="faq_section">
         <h1>Preguntas frecuentes</h1>
@@ -176,5 +198,6 @@
           <p>Krenek Martin</p>
         </div>
       </footer>
+      <script src="./js/carrousel.js"></script>
 </body>
 </html>

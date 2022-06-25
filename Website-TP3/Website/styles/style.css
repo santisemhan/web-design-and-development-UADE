@@ -51,8 +51,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10rem;
   }
-  
+  .text-header-color {
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--main-color);
+    padding-left: 100px;
+    padding-top: 2rem;
+    background: var(--background-color);
+  }
   .content .textBox {
     position: relative;
     max-width: 600px;
@@ -110,6 +118,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10rem;
   }
 
   #carrousel_premios {
@@ -148,7 +157,8 @@
   }
 
   #steps_section{
-    background-color: var(--background-color);     
+    background-color: var(--background-color);
+    padding-bottom: 10rem;     
   }
 
   #steps_section .cards-title {
@@ -159,15 +169,16 @@
   }
 
   #steps_section .steps {
+    text-align: center!important;
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
+    color: var(--main-color);
   }
    
   #steps_section .step {
     border: 3px solid var(--main-color);
     border-radius: 100%;
-    margin-bottom: 200px;
     width: 250px;
   }
 
@@ -285,7 +296,7 @@
     width: 40px;
     height: 40px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: 768px) {
   
     section {
       padding: 20px 20px 60px;
@@ -324,5 +335,79 @@
     .circle-two{
       display: none;
     }   
+    .text-header-color {
+      padding :0;
+    }
+    /*premios */
+    #carrousel_premios .card{
+      max-width: 200px;
+    }
+    #carrousel_premios .card img{
+      max-width: 120px;
+    }
+    #carrousel_premios .card p{
+      font-size: 12px;
+    }
+
+    /*global_section */
+
+    #global_section p{
+      font-size: 25px;
+    }
+
+    #global_section img {
+      max-width: 150px;
+    }
+
+    #steps_section .steps {
+      flex-direction: column;
+    }
+    /* travel_section*/
+    #travel_section a .boxes-country{
+      max-height: 350px;
+      max-width: 350px;
+    }
+
+    #travel_section a .boxes-country .text p {
+      font-size: 40px;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+
+    #faq_section img {
+      max-width: 200px;
+    }
+
+    #faq_section .faq_section_container {
+      flex-direction: column;
+    }
+
+    #faq_section h1 {
+      padding : 0;
+    }
+    
+    #faq_section .faq_section_container{
+      padding: 0;
+    }
+
+    #footer-section {
+      flex-direction: column;
+    }
+
+    #footer-section .academic_data{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    #footer-section .students_data{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    #carrousel_section .carousel {
+      width: 100%;
+      box-shadow: none;
+    }
+
   }
   
