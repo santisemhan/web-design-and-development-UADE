@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TPO de la materia Diseño y Desarrollo Web del Grupo 3 en UADE">
+    <link rel="shortcut icon" href="./assets/domain/logo/logo_fill.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/carrousel.css">
+    <link rel="stylesheet" href="./styles/scrollbar.css">
+
     <title>Ganá con Rappi</title>
 </head>
 <body>
     <section class="home-section">
         <div class="circle"></div>
         <div class="circle-two"></div>
-         <header>
+          <header>
             <a href="#">
               <h2 class="logo">
                 <img src="./assets/domain/logo/logo.svg" alt="rappi logo" class="desktop_logo">
                 <img src="./assets/domain/logo/logo_fill.svg" alt="rappi logo" class="mobile_logo">
               </h2>
             </a>
-            <div
+            <div id="burguer-menu"
+              onclick="toggleMenu()"
               class="toggle"
             ></div>
-            <ul class="navigation" style="float:right">
+            <ul id="navigation" style="float:right">
               <li><a href="#">Inicio</a></li> 
               <li><a href="#carrousel_premios">Premios</a></li>
               <li><a href="#global_section">Locales cercanos</a></li>
               <li><a href="#faq_section">FAQ</a></li>
             </ul>
-        </header>
+          </header>
         <div class="content">
           <div class="textBox">
             <h2>Ganá con<br /><span>Rappi</span></h2>
@@ -45,7 +50,7 @@
             <a href="#">Saber más</a>
           </div>
           <div class="imgBox">
-            <img src="./assets/illustrations/plane.svg" class="img-combo" alt="avion" />
+            <img src="./assets/illustrations/plane.png" class="img-combo" alt="avion" width="876" height="609" />
           </div>
         </div>        
       </section>
@@ -68,15 +73,15 @@
         <div class="cards">
           <div class="card">
             <img src="./assets/images/plane.png" alt="">
-            <p>VIAJES</p>
+            <p class="setp-info" >VIAJES</p>
           </div>
           <div class="card">
             <img src="./assets/images/gift.png" alt="">
-            <p>REGALOS</p>
+            <p class="setp-info">REGALOS</p>
           </div>
           <div class="card">
             <img src="./assets/images/discount.png" alt="">
-            <p>DESCUENTO</p>
+            <p class="setp-info">DESCUENTOS</p>
           </div>
         </div>        
       </section>
@@ -146,31 +151,15 @@
           <div class="questions_container">
             <div class="questions">
               <h2>¿Cómo debo participar?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt! Quis natus molestias ipsam! Molestias, quo temporibus tempora explicabo voluptate sapiente quae pariatur fugit expedita!</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt!</p>
             </div>
             <div class="questions">
               <h2>¿Que premios existen?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt! Quis natus molestias ipsam! Molestias, quo temporibus tempora explicabo voluptate sapiente quae pariatur fugit expedita!</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt!</p>
             </div>
             <div class="questions">
               <h2>¿Cómo debo participar?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt! Quis natus molestias ipsam! Molestias, quo temporibus tempora explicabo voluptate sapiente quae pariatur fugit expedita!</p>
-            </div>
-            <div class="questions">
-              <h2>¿Cómo debo participar?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt! Quis natus molestias ipsam! Molestias, quo temporibus tempora explicabo voluptate sapiente quae pariatur fugit expedita!</p>
-            </div>
-            <div class="questions">
-              <h2>¿Cómo debo participar?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt! Quis natus molestias ipsam! Molestias, quo temporibus tempora explicabo voluptate sapiente quae pariatur fugit expedita!</p>
-            </div>
-            <div class="questions">
-              <h2>¿Cómo debo participar?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt! Quis natus molestias ipsam! Molestias, quo temporibus tempora explicabo voluptate sapiente quae pariatur fugit expedita!</p>
-            </div>
-            <div class="questions">
-              <h2>¿Cómo debo participar?</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt! Quis natus molestias ipsam! Molestias, quo temporibus tempora explicabo voluptate sapiente quae pariatur fugit expedita!</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid totam temporibus itaque earum eaque sunt!</p>
             </div>
           </div>
           <img src="./assets/illustrations/faq-image.png" alt="Imagen de preguntas frecuentes" >
@@ -178,8 +167,8 @@
       </section>
       <footer id="footer-section">
         <div class="academic_data">
-          <img src="./assets/domain/logo/uade_logo.png" alt="Logo de uade">
-          <p>Carrera: <b>Tec. Univ. Desarrollo de software</b></p>
+          <img src="./assets/domain/uade-logo.png" alt="Logo de uade" width="250px" >
+          <p><strong>Tec. Univ. Desarrollo de software</strong></p>
         </div>
         <div class="social_media">
           <img src="./assets/domain/logo/logo_color.png" alt="Logo a color de Rappi">
@@ -198,6 +187,7 @@
           <p>Krenek Martin</p>
         </div>
       </footer>
+      <script src="./js/index.js"></script>
       <script src="./js/carrousel.js"></script>
 </body>
 </html>
