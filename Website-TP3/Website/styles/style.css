@@ -131,7 +131,8 @@ html {
 
   #carrousel_premios {
     background-color: var(--background-color);  
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
 
   #carrousel_premios .cards-title {
@@ -182,6 +183,8 @@ html {
     display: flex;
     justify-content: space-around;
     color: var(--main-color);
+    width: 80%;
+    margin-left: 10%;
   }
    
   #steps_section .step {
@@ -201,6 +204,7 @@ html {
     display: flex;  
     justify-content: space-around;
     align-items: center;
+    padding: 10% 0 10% 0;
   }
 
   #global_section p {
@@ -216,13 +220,17 @@ html {
 
   .linea-horizontal {
     margin-top: 7%;
-    width: 15%;
+    width: 100%;
     height: 0px;
     border: 2px solid #ED6865;
   }
   /* Seccion viajá igual*/
+
   #travel_section {
     background-color: var(--background-color);
+  }
+
+  .travel-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -256,7 +264,8 @@ html {
 
   /* FAQ SECTION */
   #faq_section {
-    padding-top: 100px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     background-color: var(--background-color);
   }
 
@@ -285,6 +294,10 @@ html {
 
   .faq_section_container img {
     width: 600px;
+  }
+
+  .questions p {
+    color: #49454F;
   }
 
   /* Footer section */
@@ -365,14 +378,20 @@ html {
       padding :0;
     }
     /*premios */
-    #carrousel_premios .card{
+    #carrousel_premios .card{   
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       max-width: 200px;
+      height: 30vh;
     }
     #carrousel_premios .card img{
+      transform: scale(1)!important;
       max-width: 120px;
     }
     #carrousel_premios .card p{
-      font-size: 12px;
+      font-size: 1.7rem;
     }
 
     /*global_section */
@@ -449,6 +468,14 @@ html {
 
     .step-card {
       margin-bottom: 15%;
+    }
+
+    .faq_section_container img {
+      display: none;
+    }
+
+    .questions {
+      font-size: 1rem;
     }
   }
   
