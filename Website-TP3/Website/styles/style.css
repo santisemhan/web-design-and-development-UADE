@@ -335,6 +335,33 @@ html {
     width: 40px;
     height: 40px;
   }
+  /* multimedia */
+  #multimedia {
+    padding-top: 5em;
+    padding-bottom: 3em;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-around ;
+  }
+  #multimedia .mapa {
+    text-align: center;
+  }
+  #multimedia .video_youtube {
+    text-align: center;
+  }
+
+  #multimedia .video_youtube iframe {
+    width: 650px;
+  }
+
+  #multimedia .mapa iframe {
+    width: 650px;
+  }
+
+  #multimedia h2{
+    padding-bottom: 3%;
+  }
 
   @media (max-width: 991px) {
   
@@ -485,6 +512,18 @@ html {
 
     .questions {
       font-size: 1rem;
+    }
+
+    #multimedia {
+      flex-direction: column;
+    }
+
+    #multimedia iframe {
+      max-width: 450px;
+    }
+
+    #multimedia .mapa {
+      padding-bottom: 5%;
     }
   }
   
