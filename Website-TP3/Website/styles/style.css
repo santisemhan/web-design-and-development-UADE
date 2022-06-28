@@ -104,9 +104,12 @@ html {
     background: var(--background-color);
   }
   
+  .content .imgBox {
+    overflow: hidden;
+  }
+
   .content .imgBox .img-combo{
      transform: scale(1);
-     margin-left: 8%;
   }
 
   .mobile_logo {
@@ -122,12 +125,14 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10rem;
     padding: 7rem;
   }
 
   #carrousel_premios {
     background-color: var(--background-color);  
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
 
   #carrousel_premios .cards-title {
@@ -140,6 +145,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   #carrousel_premios .card {
@@ -162,7 +168,6 @@ html {
 
   #steps_section{
     background-color: var(--background-color);
-    padding-bottom: 10rem;     
   }
 
   #steps_section .cards-title {
@@ -178,6 +183,8 @@ html {
     display: flex;
     justify-content: space-around;
     color: var(--main-color);
+    width: 80%;
+    margin-left: 10%;
   }
    
   #steps_section .step {
@@ -201,6 +208,7 @@ html {
     display: flex;  
     justify-content: space-around;
     align-items: center;
+    padding: 10% 0 10% 0;
   }
 
   #global_section p {
@@ -216,13 +224,17 @@ html {
 
   .linea-horizontal {
     margin-top: 7%;
-    width: 15%;
+    width: 100%;
     height: 0px;
     border: 2px solid #ED6865;
   }
   /* Seccion viajá igual*/
+
   #travel_section {
     background-color: var(--background-color);
+  }
+
+  .travel-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -253,12 +265,20 @@ html {
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 0.25px; 
   }
+
   /* FAQ SECTION */
 
 
   #faq_section {
-    padding-top: 100px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     background-color: var(--background-color);
+  }
+
+  .questions {
+    padding-top: 7%;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
   .questions_container{
@@ -281,6 +301,9 @@ html {
     width: 600px;
   }
 
+  .questions p {
+    color: #49454F;
+  }
 
   /* Footer section */
   #footer-section {
@@ -312,8 +335,8 @@ html {
     width: 40px;
     height: 40px;
   }
-  
-  @media (max-width: 768px) {
+
+  @media (max-width: 991px) {
   
     section {
       padding: 20px 20px 60px;
@@ -323,6 +346,10 @@ html {
       display: none;
     }
   
+    .linea-horizontal{
+      display: none;
+    }
+
     .content {
       flex-direction: column;
       margin-top: 100px;
@@ -342,7 +369,7 @@ html {
     }
   
     .content .textBox {
-      max-width: 100%;
+      max-width: 150%;
     }
   
     .content .imgBox .img-combo{
@@ -360,17 +387,27 @@ html {
       padding :0;
     }
     /*premios */
-    #carrousel_premios .card{
+    #carrousel_premios .card{   
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       max-width: 200px;
+      height: 30vh;
     }
     #carrousel_premios .card img{
+      transform: scale(1)!important;
       max-width: 120px;
     }
     #carrousel_premios .card p{
-      font-size: 12px;
+      font-size: 1.7rem;
     }
 
     /*global_section */
+    
+    #global_section {
+      padding-bottom: 5%;
+    }
 
     #global_section p{
       font-size: 25px;
@@ -399,6 +436,10 @@ html {
       max-width: 200px;
     }
 
+    .questions_container{
+      width: 50%;
+    }
+
     #faq_section .faq_section_container {
       flex-direction: column;
     }
@@ -425,10 +466,25 @@ html {
       padding-bottom: 20px;
     }
 
+    #carrousel_section {
+      padding: 15px;
+    }
+
     #carrousel_section .carousel {
       width: 100%;
       box-shadow: none;
     }
 
+    .step-card {
+      margin-bottom: 15%;
+    }
+
+    .faq_section_container img {
+      display: none;
+    }
+
+    .questions {
+      font-size: 1rem;
+    }
   }
   
