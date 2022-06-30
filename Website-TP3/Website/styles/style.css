@@ -152,7 +152,7 @@ html {
     flex-wrap: wrap;
   }
 
-  #carrousel_premios .card {
+  #carrousel_premios .cards .card {
     background-color: var(--main-color);
     margin: 2.5%;
     width: 470px;
@@ -169,7 +169,6 @@ html {
     text-align: center;
     font-weight: 700;
     color: var(--secondary-color);
-    margin-bottom: 5rem;
   }
 
   #steps_section{
