@@ -556,7 +556,7 @@ html {
     }
 
     #multimedia iframe {
-      max-width: 320px;
+      max-width: 80%;
     }
 
     #multimedia .mapa {
@@ -588,6 +588,10 @@ html {
 
     #global_section .text_countries .country_list img:nth-child(3) {
       margin-right: 10px;
+    }
+
+    #global_section img {
+      height: 180px;
     }
 
     #carrousel_section {
