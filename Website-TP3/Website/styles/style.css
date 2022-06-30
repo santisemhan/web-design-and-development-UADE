@@ -249,7 +249,7 @@ html {
   .country_list {
     display: flex;
     flex-wrap: wrap;
-
+    margin-top: 20px;
   }
 
   /* Seccion viajá igual*/
@@ -395,6 +395,9 @@ html {
     padding-bottom: 3%;
   }
 
+  .hidden-title {
+    display: none;
+  }
 
   @media (max-width: 991px) {
   
@@ -586,5 +589,49 @@ html {
     #global_section .text_countries .country_list img:nth-child(3) {
       margin-right: 10px;
     }
+
+    #carrousel_section {
+      min-height: 0;
+    }
+
+    .carousel .slides .slide {
+      min-height: 0!important;
+    }
+    .carousel {
+      height: 300px!important;
+    }
+
+    .home-section {
+      padding: 30px;
+    }
+
+    .home-section .content {
+      padding-bottom: 0;
+    }
+    #carrousel_section {
+      padding-top: -200px;
+    }
+
+    #steps_section .cards-title {
+      display: none;
+    }
+
+    #carrousel_premios .cards-title {
+      display: none;
+    }
+
+    #travel_section {
+      padding: 15px;
+    }
+    #travel_section .text-header-color{
+      display: none;
+    }
+    .hidden-title {
+      font-size: 2.5rem;
+      display: block;
+      text-align: center;
+      color: var(--main-color);
+    }
+    
   }
   

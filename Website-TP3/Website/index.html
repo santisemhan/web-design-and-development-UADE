@@ -31,10 +31,11 @@
               class="toggle"
             ></div>
             <ul id="navigation" style="float:right">
-              <li><a href="#">Inicio</a></li> 
-              <li><a href="#carrousel_premios">Premios</a></li>
-              <li><a href="#global_section">Locales cercanos</a></li>
-              <li><a href="#faq_section">FAQ</a></li>
+              <li><a href="#" onclick="toggleMenu()">Inicio</a></li> 
+              <li><a href="#carrousel_premios" onclick="toggleMenu()">Premios</a></li>
+              <li><a href="#global_section" onclick="toggleMenu()">Locales cercanos</a></li>
+              <li><a href="#multimedia" onclick="toggleMenu()">Conocenos</a></li>
+              <li><a href="#faq_section" onclick="toggleMenu()">FAQ</a></li>
             </ul>
           </header>
         <div class="content">
@@ -42,16 +43,15 @@
             <h2>Ganá con<br /><span>Rappi</span></h2>
             <br />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
-              porro mollitia quae magnam quisquam, dolorum voluptates laboriosam enim
-              nostrum nam earum aut blanditiis non voluptatum hic dolore consequuntur
-              voluptatem architecto!
+              En esta ocasión Rappi esta de fiesta, y queremos premiarte a vos, 
+              si ya realizaste alguna compra en esta semana ya estás participando, en caso de que no hayas comprado, todavía estás a tiempo! El sorteo finaliza a fines de julio, estaremos anunciando los diferentes ganadores por nuestras redes sociales y también mediante mails.<br>
+              ¿Qué esperás para participar?
             </p>
             <br />
-            <a href="#">Saber más</a>
+            <a href="#steps_section">Saber más</a>
           </div>
           <div class="imgBox">
-            <img src="./assets/illustrations/plane.png" class="img-combo" alt="avion" width="876" height="609" />
+            <img src="./assets/illustrations/plane.png" class="img-combo" alt="Imagen de avion" width="876" height="609" />
           </div>
         </div>        
       </section>
@@ -73,6 +73,7 @@
       </section>
       <section id="carrousel_premios">
         <h2 class="cards-title">¡Ganá diferentes premios!</h2>
+        <h2 class="hidden-title">Premios</h2>
         <div class="cards">
           <div class="card">
             <img src="./assets/images/plane.png" alt="avion rappi 3D">
@@ -90,20 +91,24 @@
       </section>
       <section id="steps_section">
         <h2 class="cards-title">¡Seguí los pasos! <br/> Y el resto dejaselo a <strong>Rappi</strong></h2>
+        <h2 class="hidden-title">¡Seguí los pasos!</h2>
         <div class="steps">
           <div class="step-card">
             <img src="./assets/illustrations/third-step.png" alt="Logo primer paso" class="step">
             <h2 class="setp-info">Registrate</h2>
+            <p>Para poder participar, tenés que tener la aplicación y registrarte creandote un usuario, en caso de que ya estés registrado, ingresá a la app con tu cuenta.</p>
           </div>
           <hr class="linea-horizontal">
           <div class="step-card">
             <img class="step" src="./assets/illustrations/second-step.png" alt="Logo segundo paso">
             <h2 class="setp-info">Haz un pedido</h2>
+            <p>Para participar, lo único que debes hacer, es realizar un pedido dentro de la aplicación. </p>
           </div>
           <hr class="linea-horizontal">
           <div class="step-card">
             <img class="step" src="./assets/illustrations/first-step.png" alt="Logo tercer paso">
             <h2 class="setp-info">Participa</h2>
+            <p>Con solo realizar un pedido ya estás participando! Mientras más pedidos, más posibilidades de ganar.</p>
           </div>
         </div>
       </section>
@@ -126,7 +131,8 @@
         </div>
       </section>
       <section id="travel_section">
-        <h2 class="text-header-color" >¡Viaja igual con <b>Rappi Travel!</b></h2>
+        <h2 class="text-header-color" >¡Viajá igual con <b>Rappi Travel!</b></h2>
+        <h2 class="hidden-title"><b>¡Viajá igual!</b></h2>
         <div class="travel-container">
           <a href="https://travel.rappi.com.ar/" target="_blank" style="text-decoration: none; ">
             <div class="boxes-country" style="background-image: url('./assets/images/madrid.jpg');" title="Foto de españa">
